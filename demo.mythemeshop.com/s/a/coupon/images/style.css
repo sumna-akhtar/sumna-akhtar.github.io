@@ -1,0 +1,140 @@
+@CHARSET "UTF-8";
+
+html { }
+body { font-family: 'Raleway', Arial, Helvetica, sans-serif; font-size:13px; line-height:21px; height:100%; color:#787E87; margin:0; padding:0;
+	/* background-color:#F6F6F6;
+	background-image:url(bg.png); */
+	background-repeat:repeat;
+	background-position:top center;
+ background: #FAFAFA;}
+
+a { color: #1CA86F; text-decoration: none; outline: none; border: none; }
+a img {outline: none; border: 0; }
+
+#Wrapper { width: 1200px; margin: 30px auto 0; overflow: hidden; }
+#logo { background: url("logo.png") no-repeat; width: 197px; height: 40px; display: block; overflow: hidden; text-indent: -9999px; margin: 0 auto 20px; }
+
+h1 { margin:0; text-align: center; color: #000; font-size: 32px; line-height: 1; font-weight: 900; text-transform: uppercase;}
+h2 { text-align: center; margin-bottom: 30px; font-size: 16px; line-height: 25px; font-weight: 600; color: #5C5C5C; font-weight: 400;}
+h3 { text-align: center; margin-bottom: 23px; font-size: 22px; line-height: 22px; color: #39464E; margin: 5px 0 0; font-weight: 400; margin-bottom: 15px; font-family: Raleway;}
+.item:hover h3 { color: #1CA86F;}
+
+p { text-align:center;}
+p span { color:#222;}
+p.description { padding:10px; border-top:1px solid rgba(0,0,0,.1); font-size:130%; margin-top: 100px;}
+
+img.scale-with-grid {
+	max-width: 100%;
+	height: auto;
+}
+
+.items { overflow:hidden; margin-bottom:20px; text-align: center;}
+.items .item {width: 30.33333%;margin:0 1.5%;float: none;position: relative;display: inline-block;margin-bottom: 35px;}
+.items .item:first-child, .items .item:nth-child(4), .items .item:first-child, .items .item:nth-child(7) {
+    margin-left: 0;
+}
+.items .item:nth-child(3n+3) {
+    margin-right: 0;
+}
+.items .item .desktop {position: absolute;left: 44px;top: 54px;width: 277px;height: 174px;overflow: hidden;}
+.items .item .desktop .inside { position: absolute; left: 0px; width: 100%; line-height: 0; }
+
+.items .item .desktop .inside {
+  -webkit-transition-duration: 3s;
+  -moz-transition-duration: 3s;
+  -ms-transition-duration: 3s;
+  -o-transition-duration: 3s;
+  transition-duration: 3s;
+}
+.items .item-1 a:hover .desktop .inside {margin-top: -461px;}
+.items .item-2 a:hover .desktop .inside {margin-top: -439px;}
+.items .item-3 a:hover .desktop .inside {margin-top: -328px;}
+.items .item-4 a:hover .desktop .inside {margin-top: -313px;}
+.items .item-5 a:hover .desktop .inside {margin-top: -241px;}
+.items .item-6 a:hover .desktop .inside {margin-top: -546px;}
+.items .item-7 a:hover .desktop .inside {margin-top: -242px;}
+.items .item-8 a:hover .desktop .inside {margin-top: -282px;}
+.items .item-9 a:hover .desktop .inside {margin-top: -249px;}
+.items .item-10 a:hover .desktop .inside { margin-top: -340px;}
+.items .item-11 a:hover .desktop .inside {margin-top: -442px;}
+.ribbon {
+    position: absolute;
+    right: 16px;
+    top: 29px;
+    background: #F44336;
+    color: #fff;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+@media only screen and (min-width: 960px) and (max-width: 1150px) {
+	#Wrapper { width: 920px;}
+	.items .item .desktop { position: absolute; left: 44px; top: 54px; width: 280px; height: 176px; }
+	.items .item-1 a:hover .desktop .inside {margin-top: -465px;}
+	.items .item-2 a:hover .desktop .inside {margin-top: -445px;}
+	.items .item-3 a:hover .desktop .inside {margin-top: -333px;}
+	.items .item-4 a:hover .desktop .inside {margin-top: -317px;}
+	.items .item-5 a:hover .desktop .inside {margin-top: -244px;}
+	.items .item-6 a:hover .desktop .inside {margin-top: -552px;}
+	.items .item-7 a:hover .desktop .inside {margin-top: -244px;}
+	.items .item-8 a:hover .desktop .inside {margin-top: -289px;}
+	.items .item-9 a:hover .desktop .inside {margin-top: -254px;}
+	.items .item-10 a:hover .desktop .inside { margin-top: -344px;}
+	.items .item-11 a:hover .desktop .inside {margin-top: -448px;}
+}
+@media only screen and (min-width: 768px) and (max-width: 1150px) {
+	.items .item { width: 40%; }
+	.items .item:nth-child(2n-5) {margin-left: 0;margin-right: 1.5%;}
+	.items .item:nth-child(2n+2) { margin-right: 0;}
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	#Wrapper { width: 760px; }
+	.items .item .desktop { position: absolute; left: 36px; top: 52px; width: 232px; height: 145px; }
+	.items .item-1 a:hover .desktop .inside {margin-top: -386px;}
+	.items .item-2 a:hover .desktop .inside {margin-top: -369px;}
+	.items .item-3 a:hover .desktop .inside {margin-top: -276px;}
+	.items .item-4 a:hover .desktop .inside {margin-top: -263px;}
+	.items .item-5 a:hover .desktop .inside {margin-top: -203px;}
+	.items .item-6 a:hover .desktop .inside {margin-top: -458px;}
+	.items .item-7 a:hover .desktop .inside {margin-top: -203px;}
+	.items .item-8 a:hover .desktop .inside {margin-top: -239px;}
+	.items .item-9 a:hover .desktop .inside {margin-top: -209px;}
+	.items .item-10 a:hover .desktop .inside { margin-top: -285px;}
+	.items .item-11 a:hover .desktop .inside {margin-top: -371px;}
+}
+
+@media only screen and (max-width: 767px) {
+	#Wrapper { width: 420px; }
+	.items .item { width: 100%; margin:0 0 20px; }
+	.items .item .desktop { position: absolute; left: 50px; top: 55px; width: 320px; height: 201px; }
+	.items .item-1 a:hover .desktop .inside {margin-top: -532px;}
+	.items .item-2 a:hover .desktop .inside {margin-top: -508px;}
+	.items .item-3 a:hover .desktop .inside {margin-top: -379px;}
+	.items .item-4 a:hover .desktop .inside {margin-top: -362px;}
+	.items .item-5 a:hover .desktop .inside {margin-top: -279px;}
+	.items .item-6 a:hover .desktop .inside {margin-top: -631px;}
+	.items .item-7 a:hover .desktop .inside {margin-top: -279px;}
+	.items .item-8 a:hover .desktop .inside {margin-top: -331px;}
+	.items .item-9 a:hover .desktop .inside {margin-top: -291px;}
+	.items .item-10 a:hover .desktop .inside { margin-top: -392px;}
+	.items .item-11 a:hover .desktop .inside {margin-top: -511px;}
+}
+
+@media only screen and (max-width: 479px) {
+	#Wrapper { width: 300px; }
+	.items .item .desktop {position: absolute;left: 36px;top: 52px;width: 228px;height: 145px;}
+	.items .item-1 a:hover .desktop .inside {margin-top: -378px;}
+	.items .item-2 a:hover .desktop .inside {margin-top: -362px;}
+	.items .item-3 a:hover .desktop .inside {margin-top: -271px;}
+	.items .item-4 a:hover .desktop .inside {margin-top: -257px;}
+	.items .item-5 a:hover .desktop .inside {margin-top: -198px;}
+	.items .item-6 a:hover .desktop .inside {margin-top: -449px;}
+	.items .item-7 a:hover .desktop .inside {margin-top: -199px;}
+	.items .item-8 a:hover .desktop .inside {margin-top: -232px;}
+	.items .item-9 a:hover .desktop .inside {margin-top: -206px;}
+	.items .item-10 a:hover .desktop .inside { margin-top: -280px;}
+	.items .item-11 a:hover .desktop .inside {margin-top: -364px;}
+}
